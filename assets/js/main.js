@@ -8,10 +8,10 @@ class registerUser {
     this.registrationDate = Date(Date.UTC());
   }
   get name() {
-    console.log(`User name: ${this._name}`);
+    return this._name;
   }
   get pass() {
-    console.log(`User password: ${this.password}`);
+    return this.password;
   }
   set name(value) {
     this._name = value;
@@ -21,8 +21,8 @@ class registerUser {
   }
   showInfo() {
     console.log(
-      `The user "${this._name}" has the password "${
-        this.password
+      `The user "${this.name}" has the password "${
+        this.pass
       }" and has been registrated since ${this.registrationDate}.`
     );
   }
