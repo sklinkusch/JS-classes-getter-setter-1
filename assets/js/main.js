@@ -5,7 +5,7 @@ class registerUser {
   constructor(name, password) {
     this.name = name;
     this.password = password;
-    this.registrationDate = Date.now();
+    this.registrationDate = Date(Date.UTC());
   }
   get name() {
     console.log(`User name: ${this._name}`);
