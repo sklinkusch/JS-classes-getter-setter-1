@@ -4,20 +4,20 @@ Fill the class (check at the end for expected output)
 class registerUser {
   constructor(name, password) {
     this.name = name;
-    this.password = password;
+    this.pass = password;
     this.registrationDate = Date(Date.UTC());
   }
   get name() {
     return this._name;
   }
   get pass() {
-    return this.password;
+    return this._pass;
   }
   set name(value) {
     this._name = value;
   }
   set pass(value) {
-    this.password = value;
+    this._pass = value;
   }
   showInfo() {
     console.log(
